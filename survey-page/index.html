@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es-co">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encuesta</title>
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Preferencias en desarrollo front end</h1>
+        <p id="description">
+          Queremos conocer sus gustos a la hora de tomar retos personales o
+          laborales, para potenciar estás habilidades
+        </p>
+      </header>
+      <main>
+        <form action="" id="survey-form">
+          <label for="name" id="name-label">Nombre</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Su nombre"
+            required
+          />
+          <label for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Su email"
+            required
+          />
+          <label for="number" id="number-label"
+            >Escribe un número entre 18 y 90</label
+          >
+          <input
+            type="number"
+            class="form-control"
+            id="number"
+            placeholder="Número"
+            min="18"
+            max="90"
+          />
+          <label for="dropdown" id="dropdown-labe">Lenguaje preferido</label>
+          <select name="dropdown" id="dropdown">
+            <option value disabled selected>Seleccionar lenguaje</option>
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+            <option value="javascript">Javascript</option>
+            <option value="go">Go</option>
+            <option value="php">PHP</option>
+            <option value="c">C</option>
+          </select>
+          <p>PAAS preferida:</p>
+          <fieldset class="fieldset-group">
+            <label for="radio-platform-1" id="radio-platform-label-1">
+              <input
+                type="radio"
+                name="radio-platform"
+                id="radio-platform-1"
+                value="heroku"
+              />Heroku
+            </label>
+            <label for="radio-platform-2" id="radio-platform-label-2">
+              <input
+                type="radio"
+                name="radio-platform"
+                id="radio-platform-2"
+                value="aws"
+              />AWS
+            </label>
+            <label for="radio-platform-3" id="radio-platform-label-3">
+              <input
+                type="radio"
+                name="radio-platform"
+                id="radio-platform-3"
+                value="azure"
+              />Azure
+            </label>
+            <label for="radio-platform-4" id="radio-platform-label-4">
+              <input
+                type="radio"
+                name="radio-platform"
+                id="radio-platform-4"
+                value="google-cloud"
+              />Google Cloud
+            </label>
+          </fieldset>
+
+          <p>Servicio preferido de comunicación con sus compañeros:</p>
+          <fieldset class="fieldset-group">
+            <label for="check-job-1" id="check-job-slack">
+              <input
+                type="checkbox"
+                name="check-job"
+                id="check-job-1"
+                value="slack"
+              />slack
+            </label>
+            <label for="check-job-2" id="check-job-whatsapp">
+              <input
+                type="checkbox"
+                name="check-job"
+                id="check-job-2"
+                value="whatsapp"
+              />Whatsapp
+            </label>
+            <label for="check-job-3" id="check-job-zoom">
+              <input
+                type="checkbox"
+                name="check-job"
+                id="check-job-3"
+                value="zoom"
+              />Zoom
+            </label>
+            <label for="check-job-4" id="check-job-meet">
+              <input
+                type="checkbox"
+                name="check-job"
+                id="check-job-4"
+                value="meet"
+              />Google Meet
+            </label>
+          </fieldset>
+          <textarea
+            name="textarea-comments"
+            id="textarea-comments"
+            rows="10"
+            columns="50"
+            placeholder="Por favor denos su opinión acerca de la forma de trabajo actual"
+          ></textarea>
+
+          <button type="submit" id="submit">Enviar</button>
+        </form>
+      </main>
+    </div>
+    >
+    <footer></footer>
+    <script src="assets/js/modernizr.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

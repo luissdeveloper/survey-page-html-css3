@@ -84,6 +84,11 @@ header {
   }
 }
 
+#img-div{
+    max-width: 70rem;
+    margin: 2.5rem auto;
+}
+
 header > p{
     font-size: 2.2rem;
     font-style: italic;

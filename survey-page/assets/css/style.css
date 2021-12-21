@@ -96,13 +96,13 @@ button:hover{
 
 .container{
     max-width: 120rem;
-    width: 90%;
+    width: 75%;
     margin: 0 auto;
     border-radius: 0.5rem;
     background: linear-gradient(to right, rgba(0, 92, 151, 0.9)
     , rgba(54, 55, 149, 0.9) );
     padding: 2.5rem;
-    margin-top: 5rem;
+    margin-top: 10rem;
 }
 
 header{
